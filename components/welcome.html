@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="../assets/css/welcome.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIP.Z4UzqNdNvWBNDgP4hCrK9gHaJd?rs=1&pid=ImgDetMain" alt="Logo" height="150px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hostel Info</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#" onclick="getLocationAndCheckIn()">Check-in</a></li>
+            </ul>
+        </nav>
+        <div class="profile-section">
+            <img src="" alt="Profile Avatar" class="avatar">
+            <span id="user-name"></span>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>Welcome to the Hostel Management System</h1>
+        <p>Manage your hostel stay, check-in/out times, and services easily.</p>
+        
+        <div class="checkin-container">
+            <button class="checkin-btn" onclick="getLocationAndCheckIn()">Check-in</button>
+            <p id="checkin-status"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../assets/js/welcome.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/welcome.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://th.bing.com/th/id/OIP.Z4UzqNdNvWBNDgP4hCrK9gHaJd?rs=1&pid=ImgDetMain" alt="NIET Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Student Logs</a></li>
+            </ul>
+        </nav>
+        <div class="profile-section">
+            <img src="../assets/images/avatar.png" alt="Profile Avatar" class="avatar">
+            <span id="faculty-name"></span>
+        </div>
+    </header>
+
+    <section class="section">
+        <h1>Faculty Dashboard</h1>
+        <p>Search for students and view their check-in and check-out logs.</p>
+
+        <div class="search-container">
+            <input type="email" id="student-email" placeholder="Enter Student Email" class="input-field" required>
+            <button class="search-btn" onclick="searchStudent()">Search</button>
+        </div>
+
+        <div id="logs-container" class="logs-container hidden">
+            <h2>Check-in/Check-out Logs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Check-in Time</th>
+                        <th>Check-out Time</th>
+                    </tr>
+                </thead>
+                <tbody id="logs-table">
+                    <!-- Logs will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hostel Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../assets/js/faculty_home.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <!-- Button Group for Student and Faculty -->
+        <div class="btn-group">
+            <button onclick="showForm('student')">Student Login</button>
+            <button onclick="showForm('faculty')">Faculty Login</button>
+        </div>
+
+        <!-- Student Login Form -->
+        <div id="student-form" class="form-container">
+            <form action="home.html" method="GET">
+                <input type="email" class="input-field" name="email" placeholder="Student Email" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <button type="submit" class="login-btn">Login as Student</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+            <p>New user? <a href="register.html">Register Here</a></p>
+        </div>
+
+        <!-- Faculty Login Form -->
+        <div id="faculty-form" class="form-container">
+            <form action="faculty_home.html" method="GET">
+                <input type="email" class="input-field" name="email" placeholder="Faculty Email" required>
+                <input type="password" class="input-field" name="password" placeholder="Password" required>
+                <button type="submit" class="login-btn">Login as Faculty</button>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+            <p>New user? <a href="register.html">Register Here</a></p>
+        </div>
+    </div>
+
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>

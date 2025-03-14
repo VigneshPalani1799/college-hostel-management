@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f7;
+    background-image: url('https://i0.wp.com/stepupstudent.com/wp-content/uploads/2020/10/Campus-view-of-NIE-Institute-of-Technology-Mysore_Campus-view.png?resize=300%2C200&ssl=1');
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-group button {
+    width: 48%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-group button:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+    display: none;
+}
+
+.form-container.active {
+    display: block;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 12px;
+    margin-top: 10px;
+    display: block;
+}

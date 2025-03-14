@@ -1,0 +1,259 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;  /* Light Blue */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #0288d1;  /* Darker Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;  /* Yellow Hover */
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+}
+
+#home h1 {
+    margin-bottom: 20px;
+}
+
+/* Main Hostel Image */
+.hostel-image img {
+    width: 80%;
+    max-width: 800px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hostel-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Video Links Section */
+.video-links {
+    margin-top: 20px;
+}
+
+.video-links button {
+    background-color: #0288d1;  /* Blue */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.video-links button:hover {
+    background-color: #0277bd;
+}
+
+/* Hostel Sections (Girls and Boys) */
+#hostel-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hostel-section {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.hostel-section img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Service Cards */
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 23%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.service-card h3 {
+    color: #333;
+}
+
+/* Login Pages */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    background-color: #0288d1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #0277bd;
+}
+
+.login-container p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0288d1;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay Animations for Sections */
+#home {
+    animation-delay: 0.5s;
+}
+
+#about {
+    animation-delay: 1s;
+}
+
+#services {
+    animation-delay: 1.5s;
+}
+
+#login {
+    animation-delay: 2s;
+}
+
+.service-card:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 3.5s;
+}
+
+.hostel-section:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.hostel-section:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.hidden {
+    display: none;
+}
