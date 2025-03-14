@@ -116,23 +116,7 @@ This will install the required **Node.js dependencies**:
 
 ---
 
-## 🤝 Contributing
-Want to contribute? Follow these steps:
-1️⃣ **Fork the repository**
-2️⃣ **Create a new branch:**
-   ```sh
-   git checkout -b feature-branch
-   ```
-3️⃣ **Commit changes & push:**
-   ```sh
-   git commit -m "Added new feature"
-   git push origin feature-branch
-   ```
-4️⃣ **Submit a pull request!** 🚀
-
----
-
 ## 📞 Support
-Need help? Contact us at: **support@hostelmanagement.com**
+Need help? Contact us at: **vigneshpalani003@gmail.com**
 
 Happy Coding! 🚀🔥
